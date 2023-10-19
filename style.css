@@ -1,0 +1,111 @@
+/* Variáveis */
+:root {
+    --main-bg-color: rgb(0, 0, 0);
+    --header-bg-color: rgb(100, 4, 4);
+    --text-color: #ffffff;
+    --link-color: #ffffff;
+    --link-hover-color: #7c0505;
+    --footer-bg-color: rgb(255, 255, 25555);
+    --footer-link-bg-hover: #ffffff;
+    --footer-link-color-hover:rgb(255, 255, 25555);
+    --box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4); /* Aumentei a sombra */
+    --main-box-shadow: 0 15px 30px  rgba(255, 255, 255, 0.4); /* Nova sombra para o main */
+}
+
+/* Reset CSS */
+body, h2, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 25px;
+    max-width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-shadow: var(--box-shadow);
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: var(--box-shadow);
+}
+
+main {
+    margin: 20px auto;
+    width: 100%; /* Largura desejada para o main (80% do viewport) */
+
+    /* Adicione a imagem de fundo com centralização e ajuste de opacidade */
+}
+/* Ajuste das letras no main */
+main h1 {
+    font-size: 3em;
+    color: #fefefe83;
+    text-align: center; /* Centralizar o título */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 12px;
+    font-size: 1.2em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--link-hover-color);
+    text-decoration: none;
+    padding: 0 2px;
+    font-weight: bold;
+    cursor: grab;
+    transition: all 1s;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--footer-bg-color);
+    padding: 20px 0;
+    box-shadow: var(--box-shadow);
+}
+
+footer a {
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+
+
+.ul-js {
+    text-align: center;
+    width: 100%;
+}
+
